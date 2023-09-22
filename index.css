@@ -1,6 +1,52 @@
 body {
-    background: #273549;
-    text-align: center;
+    background: black;
+    text-align: left;
     color: white;
     margin: 0;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Happy Monkey', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Karla', sans-serif;
+}
+#container{
+    background: #273549;
+    width: 550px;
+    height: 550px;
+    margin: 200px auto 200px auto;
+    display: block;
+}
+#hero-section{
+    font-weight: 800;
+    padding: 50px 50px;
+}
+.highlight{
+    color: #4ADF86;
+}
+#flavour-text{
+    color: #D5D4D8;
+}
+#line {
+        margin: 0px 20px 20px 20px;
+        background: #2F3E53;
+        opacity: 0.5;
+}
+.button{
+    color: white;
+    background: #10B981;
+    width: 191px;
+    height: 42px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+#password-section{
+    display: flex;
+    justify-content: space-around;
+}
+.pass-el{
+    width: 211px;
+    height: 39px;
+    background: #2F3E53;
+    border: none;
+    border-radius: 8px;
 }
