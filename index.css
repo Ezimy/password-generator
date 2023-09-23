@@ -24,6 +24,7 @@ body {
 }
 #flavour-text{
     color: #D5D4D8;
+    font-weight: 400;
 }
 #line {
         margin: 0px 20px 20px 20px;
@@ -49,4 +50,7 @@ body {
     background: #2F3E53;
     border: none;
     border-radius: 8px;
+    color: #55F991;
+    padding: 4px;
+    overflow: auto;
 }
