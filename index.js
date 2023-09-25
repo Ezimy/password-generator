@@ -3,11 +3,17 @@ const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","
 let password = "";
 let passEl1 = document.getElementById("pass-el-1")
 let passEl2 = document.getElementById("pass-el-2")
+let passLength = 15;
+let input = document.getElementById("pass-length")
+function setPassLength(){
+    passLength = input.value
+}
 function generateRandomIndex(){
         return Math.floor(Math.random() * characters.length)
     }
 function generatePassword(){
-    for (let i = 0 ; i < 15; i++){
+    password = "";
+    for (let i = 0 ; i < passLength; i++){
         password += characters[generateRandomIndex()]
     }
     return password
