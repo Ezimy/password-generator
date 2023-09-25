@@ -22,6 +22,13 @@ body {
 #length-section{
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+#toggle-symbol{
+    display: flex;
+    justify-content: flex-start;
+    color: #10B981;
 }
 .highlight{
     color: #4ADF86;
@@ -58,4 +65,41 @@ body {
     color: #55F991;
     padding: 4px;
     overflow: auto;
+}
+.switch{
+    position: relative;
+    width: 60px;
+    height: 30px;
+    margin: 10px 10px 10px 10px;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2F3E53;
+    transition: .4s;
+    border-radius: 34px;
+}
+.switch input {display:none}
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 5px;
+    bottom: 5px;
+    border-radius: 10px;
+    background-color: white;
+    transition: 0.4s;
+}
+input:checked +.slider
+{
+    background-color: #10B981;
+}
+input:checked +.slider::before
+{
+    transform: translateX(30px);
 }
